@@ -16,14 +16,14 @@ public class Main {
         System.out.println(document);
         System.out.println(document1);
 
-        Author author= new Author("Vazov");
-        Book book=new Book();
-        Book book1=new Book(4.2,"txt", "Booc2",author,"A1234");
+        Author author = new Author("Vazov");
+        Book book = new Book();
+        Book book1 = new Book(4.2,"txt", "Booc2",author,"A1234");
 
         System.out.println(book);
         System.out.println(book1);
 
-        Repo repo=new Repo(10,0,0);
+        Repo repo = new Repo(10,0,0);
         repo.uploadDocument(document);
         System.out.println(repo);
         repo.uploadDocument(document1);
@@ -37,7 +37,7 @@ public class Main {
 
         repo.uploadDocument(book1);
         System.out.println(repo);
-        NewsPaper newsPaper=new NewsPaper(2,"pdf","24chasa",25);
+        NewsPaper newsPaper = new NewsPaper(2,"pdf","24chasa",25);
         repo.uploadDocument(newsPaper);
         System.out.println(repo);
 
